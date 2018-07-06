@@ -1,0 +1,226 @@
+/* helpers */
+body {
+    margin: 0;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-transform: uppercase;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.4s;
+}
+
+.social-media a .fa {
+    line-height: 50px;
+}
+
+/* navigation */
+#main-nav {
+    transition: all 0.4s;
+    background-color: transparent;
+}
+
+#main-nav a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 700;
+}
+
+#main-nav.transparentBg {
+    background-color: rgba(14, 216, 214, 0.75);
+}
+
+#main-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/header/pictures_on_the_wall.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* services */
+#services .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #FFF;
+    background-color: rgb(14, 216, 214);
+    border: 1px solid rgb(14, 216, 214);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#services .fa:hover {
+    transform: rotate(360deg);
+    background-color: #FFF;
+    color: rgb(14, 216, 214);
+}
+
+/* portfolio */
+#portfolio {
+    background-color: #F7F7F7;
+}
+
+#portfolio .content {
+    background-color: #FFF;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#portfolio .content h3 {
+    margin-top: 10px;
+}
+
+#portfolio .content .overflow {
+    height: 350px;
+    overflow: hidden;
+}
+
+#portfolio .content .overflow .background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    transition: all 0.4s;
+}
+
+#background-1 {
+    background-image: url('../img/portfolio/box_of_cookies.jpg');
+}
+
+#background-2 {
+    background-image: url('../img/portfolio/chaotic_paint.jpg');
+}
+
+#background-3 {
+    background-image: url('../img/portfolio/chestnut_on_bracket.jpg');
+}
+
+#background-4 {
+    background-image: url('../img/portfolio/child_with_blue_paint.jpg');
+}
+
+#background-5 {
+    background-image: url('../img/portfolio/house_with_blue_doors.jpg');
+}
+
+#background-6 {
+    background-image: url('../img/portfolio/typing_on_laptop.jpg');
+}
+
+#portfolio .content .overflow .background:hover {
+    transform: scale(1.5);
+}
+
+#portfolio .content .overflow .background .mask {
+    height: 100%;
+    background-color: rgba(14, 216, 214, 0.75);
+    opacity: 0;
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .content .overflow .background:hover .mask {
+    opacity: 1;
+}
+
+#portfolio .content .overflow .background .mask .fa {
+    color: #FFF;
+}
+
+/* team */
+#team figure img {
+    border-radius: 50%;
+}
+
+#team .social-media a:hover {
+    background-color: rgb(14, 216, 214);
+}
+
+/* contact */
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/footer/world-map.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFF;
+}
+
+#contact .left-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact .left-form input,
+#contact .right-form textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#contact .right-form textarea {
+    height: 100%;
+}
+
+#contact .submit {
+    margin-top: 20px;
+}
+
+#contact .submit input {
+    border: 1px solid rgb(14, 216, 214);
+    border-radius: 5px;
+    background-color: rgb(14, 216, 214);
+    color: #FFF;
+    width: 150px;
+    line-height: 50px;
+    padding: 0;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+#contact .submit input:hover {
+    color: rgb(14, 216, 214);
+    background-color: #FFF;
+}
+
+/* footer */
+#footer {
+    line-height: 50px;
+    padding: 10px 0;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer ul li {
+    display: inline-block;
+}
